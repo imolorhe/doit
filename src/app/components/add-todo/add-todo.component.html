@@ -1,0 +1,4 @@
+<div class="add-todo-wrapper">
+<input #newTodo type="text" class="add-todo-input" placeholder="Add new todo.."
+ (keyup.enter)="addTodo(newTodo.value); newTodo.value='' ">
+</div>

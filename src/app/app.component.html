@@ -1,3 +1,10 @@
-<h1>
-  {{title}}
-</h1>
+<div class="doit-wrapper">
+  <div class="doit-inner-wrapper">
+    <div class="todo-item-list">
+      <div *ngFor="let todo of data.todos" class="todo-item">
+        {{todo.title}}
+      </div>
+    </div>
+    <app-add-todo (addTodoChange)="addTodo($event)"></app-add-todo>
+  </div>
+</div>
